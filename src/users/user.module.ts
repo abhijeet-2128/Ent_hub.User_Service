@@ -11,8 +11,8 @@ import { JwtModule } from '@nestjs/jwt';
       { name: 'Users', schema: UserSchema }
     ]),
     JwtModule.register({
-      secret: 'your-secret-key', // Replace with your secret key
-      signOptions: { expiresIn: '1h' }, // Token expiration time
+      secret: 'secret-key',
+      signOptions: { expiresIn: '1h' },
     }),
   ],
   controllers: [UsersController],
